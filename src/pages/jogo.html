@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo Da Memória</title>
+    <link rel="stylesheet" href="../style/style-jogo.css">
+    <link rel="stylesheet" href="../style/style-botao.css">
+</head>
+<body>
+    <audio id="sounds" loop autoplay>
+      <source src="../../assets/sounds/backgroundSoundsGame.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <audio id="sound_cardB">
+        Your browser does not support the audio tag.
+    </audio>
+    <section class="memory-game" >
+        <div class="memory-card" data-framework="Ficha 01">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 01.png" alt="Ficha 01" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 01">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 01.png" alt="Ficha 01" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+
+        <div class="memory-card" data-framework="Ficha 02">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 02.png" alt="Ficha 02" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 02">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 02.png" alt="Ficha 02" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+    
+        <div class="memory-card" data-framework="Ficha 03">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 03.png" alt="Ficha 03" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 03">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 03.png" alt="Ficha 03" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+    
+        <div class="memory-card" data-framework="Ficha 04">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 04.png" alt="Ficha 04" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 04">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 04.png" alt="Ficha 04" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+    
+        <div class="memory-card" data-framework="Ficha 05">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 05.png" alt="Ficha 05" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 05">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 05.png" alt="Ficha 05" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+    
+        <div class="memory-card" data-framework="Ficha 06">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 06.png" alt="Ficha 06" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 06">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 06.png" alt="Ficha 06" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+
+        <div class="memory-card" data-framework="Ficha 07">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 07.png" alt="Ficha 07" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 07">
+          <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 07.png" alt="Ficha 07" />
+          <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+
+        <div class="memory-card" data-framework="Ficha 08">
+            <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 08.png" alt="Ficha 08" />
+            <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="memory-card" data-framework="Ficha 08">
+            <img draggable="false" class="front-face" src="../../assets/images/Cards/Card 08.png" alt="Ficha 08" />
+            <img draggable="false" class="back-face" src="../../assets/images/Cards/Costas.png" alt="background" />
+        </div>
+        <div class="information-card" style="visibility: hidden;">
+            <button class="btnMenu styleBtnContinuar posicaoInformacao" type="button" onclick="informationCard()" >Continuar</button>
+          <img draggable="false" class="info-img" alt="information"/>
+        </div>
+      </section>
+    <script src="../scripts/start.js"></script>
+    <script src="../scripts/som.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset= "UTF-8">
+        <title>Jogo Da Memória</title>
+	<link rel="stylesheet" href="../style/style-index.css"/>
+        <link rel="stylesheet" href="../style/style-carregamento.css">
+        <link rel="stylesheet" href="../style/style-botao.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="../scripts/index.js"></script>
+    </head>
+    <body>
+
+        <audio id="sounds" loop autoplay>
+            <source src="../../assets/sounds/backgroundSoundsMenu.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+	    </audio>
+
+        <div id="loading" style="display: block;">
+            <div class="container">
+
+                <h2 style="text-align: center;"> Loading <h2>
+
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="info" class="information-card" style="display: none;"> 
+            <img draggable="false" class="info-img" src="../../assets/images/Instruções.png" alt="information"/>
+            <button class="btnMenu styleBtnContinuar posicaoContinuar" type="button" onclick="redirect_instru()" >Continuar</button>
+        </div>
+        <div id="creditos" class="information-card" style="display: none;"> 
+            <img draggable="false"  class="info-img" src="../../assets/images/Creditos.png" alt="information"/>
+            <button class="btnMenu styleBtnContinuar posicaoContinuar" type="button" onclick="redirect_creditos()">Continuar</button>
+        </div>
+        <div id="mainPlayer" style="display: none;">
+            <button class="btnMenu styleBtnMenu posicaoStart" type="submit" onclick="redirect_play()" id="start" ><p>&nbsp &nbsp START &nbsp</p></button>
+            <button class="btnMenu styleBtnMenu posicaoInstrucao"type=" submit" onclick="redirect_instru()" id="instr" ><p style="text-align: center;">Instruções</p></button>
+            <button class="btnSettings styleBtnSettings Creditos" type="submit" id="creditos" onclick="redirect_creditos()"></button>
+            <button class="btnSettings styleBtnSettings Som" type="submit" id="sons" onclick="mute()"></button> 
+        </div>
+
+        <script src="../scripts/som.js"></script>
+    </body>
+</html>

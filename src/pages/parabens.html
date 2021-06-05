@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset= "UTF-8">
+        <title>Jogo Da Memória</title>
+        <link rel="stylesheet" href="../style/style-parabens.css"/>
+        <link rel="stylesheet" href="../style/style-botao.css"/>
+        <script>
+            function redirect_menu(){
+                window.location.href = "index.html?som="+getKeyS();
+            }
+        </script>
+    </head>
+    <body>
+
+        <img class="parabens" src="../../assets/images/parabens.png" alt="some text">
+
+        <button class="btnMenu botaoParabens" type="submit" onclick="redirect_menu()" >Continuar</button>
+
+        <audio id="sounds" loop autoplay>
+            <source src="../../assets/sounds/backgroundSoundsMenu.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+	    </audio>
+
+        <audio id="soundspb" autoplay>
+            <source src="../../assets/sounds/parabens.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+	    </audio>
+        
+        <script src="../scripts/som.js"></script>
+        <script>
+            if(getKeyS() == 'false'){
+                document.getElementById("soundspb").muted = false;
+            }else{
+                document.getElementById("soundspb").muted = true;
+            }
+        </script>
+    </body>
+</html>

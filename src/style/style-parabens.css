@@ -1,0 +1,13 @@
+
+body{
+    user-select: none;
+    background: url("../../assets/images/background-parabéns.png") fixed no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parabens{
+    position: absolute;
+    left: 65%;  /* (Aqui) Muda aqui */
+    top: 7%;	/* (Aqui) Muda aqui */
+}

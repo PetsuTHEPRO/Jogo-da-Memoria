@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body{
+    user-select: none;
+    background: url("../../assets/images/Background-menu.png") fixed no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#mainPlayer{
+    margin-top: 100px;
+    margin-right: 250px;
+    margin-left: 300px;
+}
+
+.information-card{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    top: 50px;
+    left: 50px;
+}
+
+/* Alterar a posição do Tela de Creditos e Instruções */
+
+.info-img{ 
+    position: absolute;
+    top:100%;
+    left:100%;
+    transform: translate(-125%, -120%); /* (Aqui) alterar os % para posicionar */
+}
